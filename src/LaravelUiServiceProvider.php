@@ -16,7 +16,7 @@ class LaravelUiServiceProvider extends ServiceProvider
     public function register()
     {
         
-        UiCommand::macro('spa', function (UiCommand $command) {
+        UiCommand::macro('spa-bootstrap-cover', function (UiCommand $command) {
             Vue::install($this->app->getNamespace());
         });
 
