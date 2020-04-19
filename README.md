@@ -1,4 +1,4 @@
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/kleiven/laravel-ui.svg?style=flat-square)](https://packagist.org/packages/kleiven/laravel-ui)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/kleiven/laravel-ui?include_prereleases&style=flat-square)](https://packagist.org/packages/kleiven/laravel-ui)
 [![Total Downloads](https://img.shields.io/packagist/dt/kleiven/laravel-ui.svg?style=flat-square)](https://packagist.org/packages/kleiven/laravel-ui)
 [![License](https://img.shields.io/packagist/l/kleiven/laravel-ui?style=flat-square)](https://packagist.org/packages/kleiven/laravel-ui)
 
