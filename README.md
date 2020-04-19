@@ -28,7 +28,7 @@ php artisan ui spa-bootstrap-cover
 
 This package declares preset macros using Laravel's `UiCommand`. Therefore all front end scaffolding may be installed using the `Ui` Artisan command.
 
-Since March 2020 there has been a new kid in town and for now there is only made 1 preset.
+Since March 2020 there is a new kid in town and for now there has only been time to make 1 preset, but more will follow. The following table lists all presets available for the current package version.
 
 <table>
 <thead>
@@ -40,7 +40,7 @@ Since March 2020 there has been a new kid in town and for now there is only made
 <tr>
 <td>spa-bootstrap-cover</td>
 <td><code>php artisan ui spa-bootstrap-cover</code></td>
-<td><a href="https://eivindkleiven.com">Example page spa-bootstrap-cover</a></td>
+<td><a href="https://eivindkleiven.com/spa-bootstrap-cover">Example page spa-bootstrap-cover</a></td>
 </tr>
 </tbody>
 </table>

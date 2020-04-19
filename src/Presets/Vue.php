@@ -95,8 +95,8 @@ class Vue extends Preset
         );
 
         copy(
-            __DIR__.'/vue/stubs/js/components/views/DocumentationView.vue',
-            resource_path('js/components/views/DocumentationView.vue')
+            __DIR__.'/vue/stubs/js/components/views/ArtView.vue',
+            resource_path('js/components/views/ArtView.vue')
         );
 
         copy(
