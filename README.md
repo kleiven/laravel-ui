@@ -1,3 +1,7 @@
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/kleiven/laravel-ui.svg?style=flat-square)](https://packagist.org/packages/kleiven/laravel-ui)
+[![Total Downloads](https://img.shields.io/packagist/dt/kleiven/laravel-ui.svg?style=flat-square)](https://packagist.org/packages/kleiven/laravel-ui)
+[![License](https://img.shields.io/packagist/l/kleiven/laravel-ui?style=flat-square)](https://packagist.org/packages/kleiven/laravel-ui)
+
 # Front end scaffolding for Laravel
 
 This package adds front end scaffolding to your Laravel application.
@@ -24,6 +28,8 @@ Now you may scaffold you front end using the Artisan command:
 php artisan ui spa-bootstrap-cover
 ```
 
+Also, remember to run `npm install` to install added dependencies such as bootstrap, vue and vue-router.
+
 ## Available scaffolds
 
 This package declares preset macros using Laravel's `UiCommand`. Therefore all front end scaffolding may be installed using the `Ui` Artisan command.
@@ -33,21 +39,20 @@ Since March 2020 there is a new kid in town and for now there has only been time
 <table>
 <thead>
 <tr>
-<th>Preset</th><th>Install command</th><th>Demopage</th>
+<th>Preset</th><th>Install command</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>spa-bootstrap-cover</td>
 <td><code>php artisan ui spa-bootstrap-cover</code></td>
-<td><a href="https://eivindkleiven.com/spa-bootstrap-cover">Example page spa-bootstrap-cover</a></td>
 </tr>
 </tbody>
 </table>
 
 ## Contributing
 
-Thank you for considering contributing to this package!
+Hopefully it will be possible to contribute with your presets in the future.
 
 ## License
 
