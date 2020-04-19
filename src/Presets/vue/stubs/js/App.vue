@@ -18,7 +18,7 @@
   
   <footer class="mastfoot mt-auto">
     <div class="inner">
-      <p><a href="https://github.com/kleiven/laravel-ui"><img src="/images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" class="mr-2">kleiven\laravel-ui on Github</a></p>
+      <p><a href="https://github.com/kleiven/laravel-ui"><img src="/images/GitHub-Mark-Light-32px.png" class="mr-2">kleiven\laravel-ui on Github</a></p>
     </div>
   </footer>
 </div>
