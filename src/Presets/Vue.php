@@ -78,7 +78,7 @@ class Vue extends Preset
      */
     protected static function copyWebpackConfiguration()
     {
-        copy(__DIR__.'/stubs/vue/webpack.mix.js', base_path('webpack.mix.js'));
+        copy(__DIR__.'/vue/stubs/webpack.mix.js', base_path('webpack.mix.js'));
     }
 
     /**
@@ -90,17 +90,17 @@ class Vue extends Preset
     {
  
         copy(
-            __DIR__.'/stubs/vue/js/App.vue',
+            __DIR__.'/vue/stubs/js/App.vue',
             resource_path('js/App.vue')
         );
 
         copy(
-            __DIR__.'/stubs/vue/js/components/views/DocumentationView.vue',
+            __DIR__.'/vue/stubs/js/components/views/DocumentationView.vue',
             resource_path('js/components/views/DocumentationView.vue')
         );
 
         copy(
-            __DIR__.'/stubs/vue/js/components/views/HomeView.vue',
+            __DIR__.'/vue/stubs/js/components/views/HomeView.vue',
             resource_path('js/components/views/HomeView.vue')
         );
 
@@ -113,7 +113,7 @@ class Vue extends Preset
      */
     protected static function copyVueRouter()
     {
-        copy(__DIR__.'/stubs/vue/js/router/index.js', resource_path('js/router/index.js'));
+        copy(__DIR__.'/vue/stubs/js/router/index.js', resource_path('js/router/index.js'));
     }
 
     /**
@@ -123,8 +123,8 @@ class Vue extends Preset
      */
     protected static function copyBootstrapping()
     {
-        copy(__DIR__.'/stubs/vue/js/app.js', resource_path('js/app.js'));
-        copy(__DIR__.'/stubs/js/bootstrap.js', resource_path('js/bootstrap.js'));
+        copy(__DIR__.'/vue/stubs/js/app.js', resource_path('js/app.js'));
+        copy(__DIR__.'/vue/stubs/js/bootstrap.js', resource_path('js/bootstrap.js'));
 
     }
 
@@ -136,9 +136,9 @@ class Vue extends Preset
      */
     protected static function copySass()
     {
-        copy(__DIR__.'/stubs/sass/_variables.scss', resource_path('sass/_variables.scss'));
-        copy(__DIR__.'/stubs/sass/app.scss', resource_path('sass/app.scss'));
-        copy(__DIR__.'/stubs/sass/_cover.scss', resource_path('sass/_cover.scss'));
+        copy(__DIR__.'/vue/stubs/sass/_variables.scss', resource_path('sass/_variables.scss'));
+        copy(__DIR__.'/vue/stubs/sass/app.scss', resource_path('sass/app.scss'));
+        copy(__DIR__.'/vue/stubs/sass/_cover.scss', resource_path('sass/_cover.scss'));
 
     }
 
@@ -148,11 +148,11 @@ class Vue extends Preset
      *
      * @return void
      */
-    protected function copyRoutes()
+    protected static function copyRoutes()
     {
         copy(
-            __DIR__.'/../stubs/migrations/2014_10_12_100000_create_password_resets_table.php',
-            base_path('database/migrations/2014_10_12_100000_create_password_resets_table.php')
+            __DIR__.'/vue/stubs/routes/web.php',
+            base_path('routes/web.php')
         );
     }
 
@@ -162,20 +162,20 @@ class Vue extends Preset
      *
      * @return string
      */
-    protected function copyControllers($namespace)
+    protected static function copyControllers($namespace)
     {
         file_put_contents(
             app_path('Http/Controllers/AppController.php'),
             str_replace(
                 '{{namespace}}',
                 $namespace,
-                file_get_contents(__DIR__.'/vue/stubs/controllers/AppController.stub')
+                file_get_contents(__DIR__.'/vue/stubs/controllers/AppController.php')
             )
         );
     }
 
     protected static function copyViews(){
-        copy(__DIR__.'/stubs/views/app.blade.php', resource_path('views/app.blade.php'));
+        copy(__DIR__.'/vue/stubs/views/app.blade.php', resource_path('views/app.blade.php'));
     }
 
 

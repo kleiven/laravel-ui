@@ -55,7 +55,7 @@ Since March 2020 there has been a new kid in town and for now there is only made
 
 ## Contributing
 
-Thank you for considering contributing to Sanctum! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Thank you for considering contributing to this package!
 
 ## License
 

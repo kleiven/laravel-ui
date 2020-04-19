@@ -1,13 +1,13 @@
-import VueRouter from './node_modules/vue-router'
+import VueRouter from 'vue-router'
 import HomeView from '../components/views/HomeView';
-import DocumentationView from '../components/views/DocumentationView';
+import ArtView from '../components/views/ArtView';
 
 
 
 const router = new VueRouter({
     routes: [
         { path: '/', component: HomeView },
-        { path: '/documentation', component: DocumentationView },
+        { path: '/art', component: ArtView },
         
     ]
 

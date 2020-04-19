@@ -1,4 +1,4 @@
-window._ = require('./node_modules/lodash');
+window._ = require('lodash');
 
 
 /**
@@ -8,10 +8,10 @@ window._ = require('./node_modules/lodash');
  */
 
 try {
-    window.Popper = require('./node_modules/popper.js.js.js').default;
-    window.$ = window.jQuery = require('./node_modules/jquery');
+    window.Popper = require('popper.js').default;
+    window.$ = window.jQuery = require('jquery');
 
-    require('./node_modules/bootstrap');
+    require('bootstrap');
 } catch (e) {}
 
 
@@ -21,7 +21,7 @@ try {
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = require('./node_modules/axios');
+window.axios = require('axios');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 

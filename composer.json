@@ -1,7 +1,8 @@
 {
     "name": "kleiven/laravel-ui",
-    "description": "Single Page Application (SPA) Scaffolding for Laravel applications.",
-    "keywords": ["single page application", "spa", "vue", "laravel", "ui"],
+    "description": "Front end scaffolding for Laravel applications.",
+    "homepage":"https://github.com/kleiven/laravel-ui",
+    "keywords": ["front end scaffolding", "single page application", "spa", "vue", "laravel", "ui"],
     "license": "MIT",
     "authors": [
         {
@@ -28,5 +29,12 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kleiven\\Laravel\\Ui\\LaravelUiServiceProvider"
+            ]
+        }
+    }
 }
