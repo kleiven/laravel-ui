@@ -1,6 +1,6 @@
 {
     "name": "kleiven/laravel-ui",
-    "description": "Front end scaffolding for Laravel applications.",
+    "description": "With a single Artisan command, in a fresh Laravel application, you get up and running with a fully functional Single Page Application (SPA) using Vue and Vue Router ready for you to build something wonderful.",
     "homepage":"https://github.com/kleiven/laravel-ui",
     "keywords": ["front end scaffolding", "single page application", "spa", "vue", "laravel", "ui"],
     "license": "MIT",
