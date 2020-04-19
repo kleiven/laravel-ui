@@ -1,4 +1,10 @@
-/vendor
-.phpunit.result.cache
 npm-debug.log
 yarn-error.log
+build
+composer.lock
+docs
+vendor
+coverage
+.phpunit.result.cache
+.idea
+.php_cs.cache
