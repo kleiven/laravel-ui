@@ -2,7 +2,7 @@
 
 
 <div class="card my-4 mx-4 shadow">
-  <img src="/img/Value-of-art_2018.jpg" class="card-img-top" />
+  <img src="/images/Value-of-art_2018.jpg" class="card-img-top" />
 
   <div class="card-body text-dark" style="text-shadow: none;">
     <h5 class="card-title">Value of art by Eivind Kleiven</h5>

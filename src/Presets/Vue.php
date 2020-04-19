@@ -19,6 +19,7 @@ class Vue extends Preset
     {
         static::ensureComponentDirectoryExists();
         static::ensureRouterDirectoryExists();
+        static::ensurePublicImagesDirectoryExists();
         static::updatePackages();
         
         static::copyWebpackConfiguration();
@@ -29,6 +30,7 @@ class Vue extends Preset
         static::copyRoutes();
         static::copyControllers($namespace);
         static::copyViews();
+        static::copyPublicAssets();
 
         static::removeNodeModules();
     }
@@ -44,6 +46,21 @@ class Vue extends Preset
         $filesystem = new Filesystem;
 
         if (! $filesystem->isDirectory($directory = resource_path('js/router'))) {
+            $filesystem->makeDirectory($directory, 0755, true);
+        }
+    }
+
+
+    /**
+     * Ensure the public images directory exist.
+     *
+     * @return void
+     */
+    protected static function ensurePublicImagesDirectoryExists()
+    {
+        $filesystem = new Filesystem;
+
+        if (! $filesystem->isDirectory($directory = base_path('public/images'))) {
             $filesystem->makeDirectory($directory, 0755, true);
         }
     }
@@ -103,6 +120,28 @@ class Vue extends Preset
             __DIR__.'/vue/stubs/js/components/views/HomeView.vue',
             resource_path('js/components/views/HomeView.vue')
         );
+
+    }
+
+
+    /**
+     * Copy public assets such as images.
+     *
+     * @return void
+     */
+    protected static function copyPublicAssets()
+    {
+ 
+        copy(
+            __DIR__.'/assets/images/Value-of-art_2018.jpg',
+            base_path('public/images/Value-of-art_2018.jpg')
+        );
+
+        copy(
+            __DIR__.'/assets/images/GitHub-Mark-Light-32px.png',
+            base_path('public/images/GitHub-Mark-Light-32px.png')
+        );
+
 
     }
 
