@@ -7,13 +7,14 @@
 This package adds front end scaffolding to your Laravel application.
 
 Once installed in a **fresh** Laravel application you quickly get a basic starting point.  
-To get up and running with a Single Page Application (SPA) implementing the [bootstrap Cover template](https://getbootstrap.com/docs/4.4/examples/cover/), just run the following Artisan command:
+To get up and running with a Single Page Application (SPA) just run the following Artisan command:
 
 ``` bash
 php artisan ui spa-bootstrap-cover
 ```
 
 Then your Laravel application will be set up with a fully functional SPA using [Vue](https://vuejs.org) and [Vue Router](https://router.vuejs.org/) ready for you to build something wonderful.
+The scaffolded front end is based on the [bootstrap Cover template](https://getbootstrap.com/docs/4.4/examples/cover/). Future releases will add more choices so you may chose the starting point that fits your application best.
 
 
 ## Installation
