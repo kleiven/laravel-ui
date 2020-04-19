@@ -6,7 +6,7 @@
 
 This package adds front end scaffolding to your Laravel application.
 
-Once installed on a **fresh** Laravel application you quickly get a basic starting point.  
+Once installed in a **fresh** Laravel application you quickly get a basic starting point.  
 To get up and running with a Single Page Application (SPA) implementing the [bootstrap Cover template](https://getbootstrap.com/docs/4.4/examples/cover/), just run the following Artisan command:
 
 ``` bash
