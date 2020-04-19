@@ -1,11 +1,3 @@
-<p align="center">kleiven\laravel-ui</p>
-
-<p align="center">
-<a href="https://packagist.org/packages/laravel/sanctum"><img src="https://gposer.pugx.or/laravel/sanctum/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/sanctum"><img src="https://poser.pugx.org/laravel/sanctum/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/sanctum"><img src="https://poser.pugx.org/laravel/sanctum/license.svg" alt="License"></a>
-</p>
-
 # Front end scaffolding for Laravel
 
 This package adds front end scaffolding to your Laravel application.
